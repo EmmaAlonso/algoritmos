@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRISTAL - Hacer Pedido</title>
+    <link rel="stylesheet" href="./css/main.css"
+  </head>
+  <body>
+    <header>
+      <h1>PASTELERIA CRISTAL - Hacer Pedido</h1>
+    </header>
+    <div class="container">
+      <div>
+        <h2>Menú</h2>
+        <div class="menu-item">
+          <span>Pastel de Red Lebel - $450</span>
+          <button onclick="addToCart('Patel de Red Lebel', 450)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Pastel de Chocomilk - $400</span>
+          <button onclick="addToCart('Pastel de Chocomil', 400)">
+            Agregar
+          </button>
+        </div>
+        <div class="menu-item">
+          <span>Patel de Fresa - $400</span>
+          <button onclick="addToCart('Patel de Fresa', 400)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Patel de Oreo - $350</span>
+          <button onclick="addToCart('Pastel de Oreo', 350)">Agregar</button>
+        </div>
+        <div class="menu-item">
+            <span>Patel de Moka - $450</span>
+            <button onclick="addToCart('Pastel de Moka', 450)">Agregar</button>
+          </div>
+          <div class="menu-item">
+            <span>Patel de Tres Leches - $300</span>
+            <button onclick="addToCart('Pastel de Tres Leches', 300)">Agregar</button>
+          </div>
+          <div class="menu-item">
+            <span>Patel de Nuez- $350</span>
+            <button onclick="addToCart('Pastel de Nuez', 350)">Agregar</button>
+          </div>
+          <div class="menu-item">
+            <span>Patel de Zanahoria- $450</span>
+            <button onclick="addToCart('Pastel de Zanahoria', 450)">Agregar</button>
+          </div>
+
+      <div class="cart">
+        <h3>Carrito de Compras</h3>
+        <ul id="cart-items"></ul>
+        <strong>Total: $<span id="total">0</span></strong>
+      </div>
+      <div class="order-details" id="order-details" style="display: none">
+        <!-- Sección de detalles de pedido -->
+        <h3>Detalles del Pedido</h3>
+        <p id="order-name"></p>
+        <p id="order-address"></p>
+        <ul id="order-summary"></ul>
+        <strong>Total: $<span id="order-total"></span></strong>
+      </div>
+      <div class="form-container">
+        <h2>Información de Pedido</h2>
+        <input
+          type="text"
+          id="customer-name"
+          placeholder="Nombre Completo"
+          required
+        />
+        <input
+          type="text"
+          id="customer-address"
+          placeholder="Dirección"
+          required
+        />
+        <button onclick="submitOrder()">Enviar Pedido</button>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+    </body>
+</html>
