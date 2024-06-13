@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #090d75;
+}
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.food-item {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.food-item img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+.food-details {
+    flex-grow: 1;
+}
+.food-details h3 {
+    margin: 0 0 10px 0;
+    color: #007bff;
+}
+.food-details p {
+    margin: 0 0 10px 0;
+}
+.food-details .price {
+    font-weight: bold;
+}
+.add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.add-to-cart:hover {
+    background-color: #0056b3;
+}

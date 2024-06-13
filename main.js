@@ -1,42 +1,13 @@
-function leerNumeros() {
-    const numeroUno = document.getElementById("numeroUno").value;
-    const numeroDos = document.getElementById("numeroDos").value;
-    console.log(numeroUno);
-    console.log(numeroDos);
+document.getElementById("ageForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevenir el envío del formulario
+
+  const age = parseInt(document.getElementById("ageInput").value);
+
+  if (isNaN(age)) {
+    alert("Por favor, ingrese una edad válida.");
+  } else if (age < 15) {
+    alert("¡Felicidades! Tienes un descuento.");
+  } else {
+    alert("Lo siento, no tienes descuento.");
   }
-  
-  function sumar() {
-    const numeroUno = document.getElementById("numeroUno").value;
-    const numeroDos = document.getElementById("numeroDos").value;
-    const Resultado = parseInt(numeroUno) + parseInt(numeroDos);
-    console.log(typeof Resultado);
-    console.log(Resultado);
-    document.getElementById("Resultado").innerHTML = Resultado;
-  }
-  
-  function restar() {
-    const numeroUno = document.getElementById("numeroUno").value;
-    const numeroDos = document.getElementById("numeroDos").value;
-    const Resultado = parseInt(numeroUno) - parseInt(numeroDos);
-    console.log(typeof Resultado);
-    console.log(Resultado);
-    document.getElementById("Resultado").innerHTML = Resultado;
-  }
-  
-  function dividir() {
-    const numeroUno = document.getElementById("numeroUno").value;
-    const numeroDos = document.getElementById("numeroDos").value;
-    const Resultado = parseInt(numeroUno) / parseInt(numeroDos);
-    console.log(typeof Resultado);
-    console.log(Resultado);
-    document.getElementById("Resultado").innerHTML = Resultado;
-  }
-  
-  function multiplicar() {
-    const numeroUno = document.getElementById("numeroUno").value;
-    const numeroDos = document.getElementById("numeroDos").value;
-    const Resultado = parseInt(numeroUno) * parseInt(numeroDos);
-    console.log(typeof Resultado);
-    console.log(Resultado);
-    document.getElementById("Resultado").innerHTML = Resultado;
-  }
+});
